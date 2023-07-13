@@ -13,15 +13,15 @@ jobs:
 
       - name: Lint
         run: |
-          npm run lint ,
+          npm run lint 
           echo "Linting...Done"
 
       - name: Test
         run: |
-          npm run test , 
+          npm run test  
           echo "Testing...Done"
-          
+
       - name: Build
         run: |
-          npm run build ,
+          npm run build 
           echo "Building...Done"
