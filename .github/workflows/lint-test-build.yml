@@ -10,6 +10,7 @@ jobs:
         run: |
           npm ci ,
           lint ,
+          npm audit fix ,
           echo "Linting..."
   test:
     runs-on: ubuntu-latest
