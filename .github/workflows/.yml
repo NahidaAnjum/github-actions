@@ -1,0 +1,32 @@
+name: CI
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run the lint script
+        run: |
+          npm ci,
+          lint,
+          echo "Linting..."
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run the lint script
+        run: |
+          npm ci,
+          test
+          echo "Testing..."
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run the lint script
+        run: |
+          npm ci,
+          build,
+          echo "Building..."
